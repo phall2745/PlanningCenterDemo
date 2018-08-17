@@ -10,7 +10,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/PlanningCenter@Development__PlanningCenterDemo.rcov" NAME="Development: PlanningCenterDemo Coverage Results" MODIFIED="1534532694202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="PlanningCenterDemo" />
-    <SUITE FILE_PATH="coverage/PlanningCenterDemo@Development__PlanningCenterDemo.rcov" NAME="Development: PlanningCenterDemo Coverage Results" MODIFIED="1533921816653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="PlanningCenterDemo" />
+    <SUITE FILE_PATH="coverage/PlanningCenterDemo@Development__PlanningCenterDemo.rcov" NAME="Development: PlanningCenterDemo Coverage Results" MODIFIED="1534535346863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="PlanningCenterDemo" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1003718522">
@@ -294,7 +294,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-24" />
+    <option name="x" value="-25" />
     <option name="y" value="-20" />
     <option name="width" value="2415" />
     <option name="height" value="1100" />
