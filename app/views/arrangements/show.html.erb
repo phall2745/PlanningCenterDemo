@@ -1,0 +1,18 @@
+<div id="attachment-list" class="animated fadeIn">
+  <div class="container d-flex h-100 align-items-center">
+    <div class="mx-auto text-center">
+      <h1><%= @arrangement["attributes"]["name"] %></h1>
+
+      <p>BPM:  <%= @arrangement["attributes"]["bpm"] %></p>
+      <p>Key: <%= @arrangement["attributes"]["chord_chart_key"] %></p>
+
+      <% @attachmentsNew.each do |attachment| %>
+        <p><%= link_to "Attachment: "+ attachment["attributes"]["filename"], attachment["attributes"]["url"]%></p>
+
+      <% end %>
+      <a class="btn btn-primary js-scroll-trigger" <%= link_to "Back", song_arrangements_path(@arrangement["relationships"]["song"]["data"]["id"]) %> </a>
+
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+
+<div id="arrangement-details" class="animated fadeIn centered">
+  <div class="container d-flex h-100 align-items-center">
+    <div class="mx-auto text-center">
+      <h1>Arrangements</h1>
+
+        <% @arrangements.each do |arrangement| %>
+        <%@arrangement=arrangement %>
+        <p><%= link_to "Arrangement: "+arrangement["attributes"]["name"], song_arrangement_path(arrangement["relationships"]["song"]["data"]["id"],arrangement["id"])%></p>
+
+        <% end %>
+      <a class="btn btn-primary js-scroll-trigger" <%= link_to "Back", song_path(@arrangement["relationships"]["song"]["data"]["id"]) %> </a>
+
+
+
+
+    </div>
+  </div>
+</div>

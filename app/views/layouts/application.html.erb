@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Planning Center Demo</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link href="/assets/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/all.min.css" rel="stylesheet">
+  <link href="/assets/fonts1.css" rel="stylesheet">
+  <link href="/assets/fonts2.css" rel="stylesheet">
+  <link href="/assets/grayscale.min.css" rel="stylesheet">
+  <link href="/assets/animate.css" rel="stylesheet">
+  <link href="/assets/listnav.css" rel="stylesheet">
+  <script src="/assets/jquery.min.js"></script>
+  <script src="/assets/bootstrap.bundle.min.js"></script>
+  <script src="/assets/jquery.easing.min.js"></script>
+  <script src="/assets/jquery-listnav.min.js"></script>
+
+  <style>
+
+    ul {
+      list-style: none;
+    }
+
+    body {
+      background: url("/assets/bg-masthead.jpg") no-repeat center center fixed !important;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 100%;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+    }
+
+    .centered {
+      position: absolute;
+      width: 1200px;
+      height: 400px;
+      left: 50%;
+      top: 50%;
+      margin-left: -600px;
+      margin-top: -200px;
+    }
+
+    #attachment-list {
+      position: absolute;
+      width: 1200px;
+      left: 50%;
+      top: 35%;
+      margin-left: -600px;
+    }
+  </style>
+  <meta name="turbolinks-cache-control" content="no-cache">
+</head>
+
+<body>
+<%= yield %>
+</body>
+
+</html>

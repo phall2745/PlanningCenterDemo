@@ -1,0 +1,16 @@
+<div id="song-details" class="animated fadeIn centered">
+  <div class="container d-flex h-100 align-items-center">
+    <div class="mx-auto text-center">
+      <h1><%= @song["attributes"]["title"] %></h1>
+      <p>Created: <%= @song["attributes"]["created_at"] %></p>
+      <p>Updated: <%= @song["attributes"]["updated_at"] %></p>
+      <p>Admin: <%= @song["attributes"]["admin"] %></p>
+      <p>Author: <%= @song["attributes"]["author"] %></p>
+      <p>Copyright: <%= @song["attributes"]["copyright"] %></p>
+      <p>Themes: <%= @song["attributes"]["themes"] %></p>
+      <p>CCLI Number: <%= @song["attributes"]["ccli_number"] %></p>
+      <a href="../songs/index" class="btn btn-primary js-scroll-trigger">Back</a>
+      <a class="btn btn-primary js-scroll-trigger" <%= link_to "View Arrangements", song_arrangements_path(@song["id"]) %> </a>
+    </div>
+  </div>
+</div>

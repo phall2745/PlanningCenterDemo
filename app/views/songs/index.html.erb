@@ -1,0 +1,19 @@
+<div class="animated fadeInUp container d-flex h-100 align-items-center">
+  <div id="myList-nav" class="mx-auto text-center">
+    <ul id = "song-list">
+    <% @songs.each do |song| %>
+      <li><%= link_to song["attributes"]["title"], song_path(song["id"])%></li>
+
+    <% end %>
+    </ul>
+  </div>
+</div>
+
+
+
+<script>
+  $('.ln-letters').remove()
+  $('#song-list').listnav({includeNums:false, includeAll:false, flagDisabled: false});
+
+
+</script>
