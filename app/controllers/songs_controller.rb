@@ -8,10 +8,10 @@ class SongsController < ApplicationController
       api = PCO::API.new(basic_auth_token: Rails.application.config.pco_api_key, basic_auth_secret: Rails.application.config.pco_api_secret)
       pageSize = 100
       offset = pageSize + 1
-      songsCache = JSON.parse($redis.get("songs"))
+      songsCache=$redis.get("songs")
 
       if songsCache != nil
-        @songs = songsCache
+        @songs = JSON.parse(songsCache)
 
       else
         response = api.services.v2.songs.get(order: 'title', per_page: 100)
@@ -21,8 +21,7 @@ class SongsController < ApplicationController
           @songs += response["data"]
           offset += 100
         end
-        @songs = @songs.to_json
-        $redis.set("songs", @songs)
+        $redis.set("songs", @songs.to_json)
       end
 
     rescue Exception
