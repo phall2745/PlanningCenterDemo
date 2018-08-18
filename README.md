@@ -4,6 +4,7 @@ A simple Rails application showing the capabilities of the Planning Center API R
 # Description
 This application provides a simple interface to see all the songs for a given church account and view the arrangements and attachments for each song. 
 Animate.css is used for some page transitions and Redis is used to cache the initial song list API response to boost performance.
+Please see PlanningCenterDemo.mp4 for a video demonstration.
 
 # Installation
 1. In order to run, a Redis server must be configured and be running on the machine. Here are some articles to help with this process.
