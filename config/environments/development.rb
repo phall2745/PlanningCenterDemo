@@ -6,7 +6,7 @@ Rails.application.configure do
   # since you don't have to restart the web server when you make code changes.
 
   config.pco_api_key=''
-  config.pco_api_key=''
+  config.pco_api_secret=''
 
 
   config.cache_classes = false
